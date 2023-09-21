@@ -58,11 +58,11 @@ let keyName = 'playedBy';
 character[keyName]="Maisie Williams"
 
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
-alert(character[keyName])
+alert(character[keyName]);
 
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
 
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
- character.totalSeasons=1+2+3+2
+ character.totalSeasons=1+2+3+2;
 // - Access the value of the key `totalSeason` (it should be 8)
-alert(character.totalSeasons)
+alert(character.totalSeasons);
