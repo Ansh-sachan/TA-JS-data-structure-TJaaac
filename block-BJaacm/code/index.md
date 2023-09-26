@@ -18,18 +18,18 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true because address is same
+- `user === newUser;` // true because address is same
+- `user.name === newUser.name;` // true because new user has same value of user
+- `user.name == newUser.name;`// true because new user has same value of user
+- `user.sibling == newUser.sibling;`// true because user.sibling has same value of newUser.sibling
+- `user.sibling === newUser.sibling;`// true because user.sibling has same value of newUser.sibling
+- `user.sibling == allBrothers;` // false because user and all brothers has different address
+- `user.sibling === allBrothers;` // false because user and all brothers has different address
+- `brothersCopy === allBrothers;` // false because brothersCopy and all brothers has different address
+- `brothersCopy == allBrothers;`  // false because brothersCopy and all brothers has different address
+- `brothersCopy == user.sibling;`//true because brotherscopy has same value of user
+- `brothersCopy === user.sibling;`//true because brotherscopy has same value of user
+- `brothersCopy[0] === user.sibling[0];`//true because brotherscopy[0] has same value of user
+- `brothersCopy[1] === user.sibling[1];`//true because brotherscopy[1] has same value of user
+- `user.sibling[1] === newUser.sibling[1];`//true because new user sibling has same value of user sibling
