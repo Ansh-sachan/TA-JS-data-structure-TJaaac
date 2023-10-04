@@ -67,15 +67,52 @@ console.log(got.houses[0].people.length)
 // 13. Log the size of people in Lannisters house
 console.log(got.houses[1].people.length)
 // 14. Add the name and size of people in an object like {Starks: 4, Lannisters: 6} and log the object
+let houseInfo = {}
+for(let house of got.houses){
+  houseInfo[house.name]=house.people.length
+
+}
+console.log(houseInfo)
 
 // 15. Log the name of all the people of all the houses in got one by one
+for(let house of got.houses){
+  for(let people of house.people){
+    console.log(people.name)
+  }
+}
 
 // 16. Push all names into a new array named `allPeople` and log the value array.
+let allPeople =[];
+for(let house of got.houses){
+  for(let people of house.people){
+    allPeople.push(people.name)
+  }
+}
+console.log(allPeople)
 
 // 17. Log the value and length of `allPeople` array created above
+console.log(allPeople , allPeople.length)
 
 // 18. Push all descriptions into an array named `allDescription`
+let allDescription = []
+for(let house of got.houses){
+  for(let people of house.people){
+    console.log(people.description)
+  }
+}
 
 // 19. Log the value and length `allDescription`
 
+console.log(allDescription , allDescription.length)
+
 // 20. Only the the description whose length is more than 30. (use .length property on string to get the length)
+let description = []
+for(let house of got.houses){
+  for(let people of house.people){
+    console.log(people.description)
+  }
+}
+
+if(allDescription.length < 30){
+  console.log(description)
+}
